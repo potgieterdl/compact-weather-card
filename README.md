@@ -24,13 +24,13 @@ You change this by enabling `javascript.options.dynamicImport` in `about:config`
 Add the following to resources in your lovelace config:
 
 ```yaml
-- url: https://cdn.jsdelivr.net/gh/potgieterdl/compact-weather-card/dist/weather-card.min.js
+- url: https://cdn.jsdelivr.net/gh/potgieterdl/compact-weather-card/dist/compact-weather-card.js
   type: module
 ```
 
 # Manual:
 
-1. Download the [weather-card.js](https://raw.githubusercontent.com/bramkragten/weather-card/v1.2.0/dist/weather-card.js) to `/config/www/custom-lovelace/weather-card/`. (or an other folder in `/config/www/`)
+1. Download the [compact-weather-card.js](https://raw.githubusercontent.com/potgieterdl/compact-weather-card/master/dist/compact-weather-card.js) to `/config/www/custom-lovelace/compact-weather-card/`. (or an other folder in `/config/www/`)
 2. Save, the [amCharts icons](https://www.amcharts.com/free-animated-svg-weather-icons/) (The contents of the folder "animated") under `/config/www/custom-lovelace/weather-card/icons/` (or an other folder in `/config/www/`)
 3. If you use Lovelace in storage mode, and want to use the editor, download the [weather-card-editor.js](https://raw.githubusercontent.com/bramkragten/weather-card/v1.2.0/dist/weather-card-editor.js) to `/config/www/custom-lovelace/weather-card/`. (or the folder you used above)
 
@@ -38,16 +38,16 @@ Add the following to resources in your lovelace config:
 
 ```yaml
 resources:
-  - url: /local/custom-lovelace/weather-card/weather-card.js
+  - url: /local/custom-lovelace/compact-weather-card/compact-weather-card.js
     type: module
 ```
 
 ## Configuration:
 
-And add a card with type `custom:weather-card`:
+And add a card with type `custom:compact-weather-card`:
 
 ```yaml
-type: custom:weather-card
+type: custom:compact-weather-card
 entity: weather.yourweatherentity
 name: Optional name
 ```
