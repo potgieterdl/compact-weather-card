@@ -1,10 +1,12 @@
+### This is a fork from https://github.com/bramkragten/weather-card, in a more compact form
+
 # Lovelace animated weather card
 
 Originally created for the [old UI](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008) converted by @arsaboo and @ciotlosm to [Lovelace](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008/291) and now converted to Lit to make it even better.
 
 This card uses the awesome [animated SVG weather icons by amCharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
 
-![Weather Card](https://github.com/bramkragten/custom-ui/blob/master/weather-card/weather-card.gif?raw=true)
+![Weather Card](https://github.com/potgieterdl/compact-weather-card/blob/master/compact-weather-card.gif?raw=true)
 
 Thanks for all picking this card up.
 
@@ -16,14 +18,13 @@ You have 2 options, hosted or self hosted (manual). The first option needs inter
 
 Firefox < 66 does not support all the needed functions yet for the editor.
 You change this by enabling `javascript.options.dynamicImport` in `about:config`.
-Or use the version without the editor: [Version without editor](https://raw.githubusercontent.com/bramkragten/custom-ui/58c41ad177b002e149497629a26ea10ccfeebcd0/weather-card/weather-card.js)
 
 # Hosted:
 
 Add the following to resources in your lovelace config:
 
 ```yaml
-- url: https://cdn.jsdelivr.net/gh/bramkragten/weather-card/dist/weather-card.min.js
+- url: https://cdn.jsdelivr.net/gh/potgieterdl/compact-weather-card/dist/weather-card.min.js
   type: module
 ```
 
